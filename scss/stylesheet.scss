@@ -5,27 +5,32 @@
 //    display: block;
 //    clear: both;
 // }
+header {
+  width: 100%;
+}
+
 .headertop {
   color: $color-black;
-  width: 70%;
+  width: 1010px;
   margin: 10px auto;
   display: flex;
   // background-color: red;
   h6 {
-    width: 66%;
+    width: 686px;
   }
   h2 {
-    width: 34%;
+    width: 314px;
+    font-size: 1.8rem;
     // background-color: orange;
   span {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
   }
 }
 
 .header-main {
   color: $color-black;
-  width: 70%;
+  width: 1010px;
   height: auto;
   margin: 0 auto;
   margin-bottom: 10px;
