@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/stylesheet.css">
+    <meta charset="utf-8">
+
+    <!-- Font Awesomeの読み込み -->
+    <script src="https://kit.fontawesome.com/3e161cfde5.js" crossorigin="anonymous"></script>
+    <title>杉林製作所</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+  <script>
+  jQuery(document).ready(function() {
+  var offset = 100;
+  var duration = 500;
+  jQuery(window).scroll(function() {
+  if (jQuery(this).scrollTop() > offset) {
+  jQuery('.pagetop').fadeIn(duration);
+  } else {
+  jQuery('.pagetop').fadeOut(duration);
+  }
+  });
+
+  jQuery('.pagetop').click(function(event) {
+  event.preventDefault();
+  jQuery('html, body').animate({scrollTop: 0}, duration);
+  return false;
+  })
+  });
+  </script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="headertop">
+        <h6>株式会社　杉林製作所のホームページ</h6>
+        <h2>><span>お問い合わせはこちら</span>　TEL.076-231-6004</h2>
+      </div>
+      <div class="header-main">
+        <ul>
+          <img src="img/logo.jpg" alt="logo">
+          <h1><span>株式会社</span> 杉林製作所</h1>
+          <a href="#">トップページ</a>
+          <a href="page/company.html">会社案内</a>
+          <a href="page/business.html">事業内容</a>
+          <a href="page/facility.html">保有設備</a>
+          <a href="page/recruit.html">採用情報</a>
+          <a href="https://forms.gle/Xuz3otmg1ptnFni48">お問い合わせ</a>
+        </ul>
+      </div>
+    </header>
+
+    <h1 class="topline">ああああああ</h1>
+
+    <!-- ここからメイン -->
+    <div class="main-wrapper">
+      <img src="img/main.jpg" alt="メイン">
+      <div class="main-text">
+        <h1>部品の製作から機械の組立まで、<br>すべて杉林製作所にお任せ下さい。</h1>
+        <h2 class="bdTtl">Please leave all to Sugibayashi Works</h2>
+      </div>
+    </div>
+
+    <div class="strangth-wrapper">
+      <div class="strangth">
+        <h1>「業種・業態を問わず、幅広いお客様の力になれる」それが杉林製作所の強みです。</h1>
+        <img src="http://yanagi-ss.jp/files/libs/416/201808011124258900.png?1533090265" alt="矢印">
+        <h3>杉林製作所では、お客様より頂いた図面に基づき、部品一点の製作から装置の組立まで<br>多岐にわたるご依頼をお受けしております。製菓機械、産業機械全般（工作機械、半導体装置など）<br>業種を問わず お客様のニーズに沿ってのご対応が可能です。</h3>
+      </div>
+      <ul class="Button-top">
+        <li>会社案内</li>
+        <li>事業内容</li>
+      </ul>
+    </div>
+
+    <div class="facility">
+      <h1>設備紹介<br><span>EQUIPMENT INTRODUCTION<span></h1>
+      <a href="page/facility.html">
+      <img src="http://yanagi-ss.jp/files/libs/657/20180906091357489.png?1536192839" alt="設備紹介へ">
+    </div></a>
+
+
+    <div class="recruitment">
+      <h1>RECRUITMENT</h1>
+      <h2>”ものづくり”の経験がない・・・そんな方も大丈夫！</h2>
+      <p>柳製作所では一つ一つ丁寧に指導しますので、無理なく仕事を覚える事が出来ます。
+実際に未経験で入社して活躍している先輩も在籍しています。 あなたが持っている、
+”ものづくり”への強い情熱と、製作への意欲と根気を、私たちは必要としています。
+私達と一緒に”ものづくり”しましょう！</p>
+      <ul class="Button-top-recruitment">
+        <li><span>▶︎</span>　社長からのメッセージ</li>
+        <li class="intaview"><span>▶︎</span>　先輩社員のインタビュー</li>
+      </ul>
+      <p class="Button-top-recruitment-entry"><span>▶︎</span>　採用エントリーはこちら</p>
+    </div>
+
+  <div class="topics-wrapper">
+    <div class="topics">
+      <div class="topics-title">
+        <h1>TOPICS</h1>
+        <h5>新着情報</h5>
+      </div>
+        <div class="topics-contents">
+          <div class="topics-content">
+            <h5>2020-02-29</h5>
+            <a href="#">ああああああああああああああああああああ。</a>
+          </div>
+
+          <div class="topics-content">
+            <h5>2020/02/07</h5>
+            <a href="#">ああああああああああああああああああああ。</a>
+          </div>
+
+          <div class="topics-content">
+            <h5>2020/01/09</h5>
+            <a href="#">ああああああああああああああああああああ。。</a>
+          </div>
+
+          <div class="topics-content">
+            <h5>2019/09/19</h5>
+            <a href="#">ああああああああああああああああああああ。</a>
+          </div>
+
+          <div class="topics-content dell">
+            <h5>2019/08/26</h5>
+            <a href="#">ああああああああああああああああああああ。</a>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  <div class="contact-wrapper">
+    <div class="contact">
+      <h1>CONTACT US</h1>
+      <h4>お問い合わせ</h4>
+      <h3>〒920-0047　　石川県金沢市大豆田本町甲290番地1</h3>
+      <h1>TEL. 076-231-6004(代)</h1>
+      <p><span>▶︎</span>　メールでのお問い合わせはこちら</p>
+
+    </div>
+  </div>
+
+  <footer>
+    <h5>Copyright©株式会社　杉林製作所 All Rights Reserved.</h5>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/stylesheet.css">
+    <meta charset="utf-8">
+
+    <!-- Font Awesomeの読み込み -->
+    <script src="https://kit.fontawesome.com/3e161cfde5.js" crossorigin="anonymous"></script>
+    <title>杉林製作所</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+  <script>
+  jQuery(document).ready(function() {
+  var offset = 100;
+  var duration = 500;
+  jQuery(window).scroll(function() {
+  if (jQuery(this).scrollTop() > offset) {
+  jQuery('.pagetop').fadeIn(duration);
+  } else {
+  jQuery('.pagetop').fadeOut(duration);
+  }
+  });
+
+  jQuery('.pagetop').click(function(event) {
+  event.preventDefault();
+  jQuery('html, body').animate({scrollTop: 0}, duration);
+  return false;
+  })
+  });
+  </script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="headertop">
+        <h6>株式会社　杉林製作所のホームページ</h6>
+        <h2>><span>お問い合わせはこちら</span>　TEL.076-231-6004</h2>
+      </div>
+      <div class="header-main">
+        <ul>
+          <img src="../img/logo.jpg" alt="logo">
+          <h1><span>株式会社</span> 杉林製作所</h1>
+          <a href="#">トップページ</a>
+          <a href="company.html">会社案内</a>
+          <a href="business.html">事業内容</a>
+          <a href="facility.html">保有設備</a>
+          <a href="recruit.html">採用情報</a>
+          <a href="contact.html">お問い合わせ</a>
+        </ul>
+      </div>
+    </header>
+
+    <h1 class="topline">ああああああ</h1>
+    <h1>掲載準備中</h1>

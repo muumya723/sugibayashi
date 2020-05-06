@@ -1,0 +1,576 @@
+@charset "UTF-8";
+/* CSSのリセット */
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* ルートのフォントサイズを10pxに設定しておく */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  /* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
+  font-size: 1.6em;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+/* 上に戻るボタン */
+.pagetop {
+  color: #fff;
+  background-color: #23ABA1;
+  text-decoration: none;
+  display: none;
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+  border-radius: 6rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pagetop:hover {
+  color: #fff !important;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.headertop {
+  color: #676767;
+  width: 70%;
+  margin: 10px auto;
+  display: flex;
+}
+
+.headertop h6 {
+  width: 66%;
+}
+
+.headertop h2 {
+  width: 34%;
+}
+
+.headertop h2 span {
+  font-size: 1.4rem;
+}
+
+.header-main, .facility-footer-main {
+  color: #676767;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.header-main ul, .facility-footer-main ul {
+  display: flex;
+}
+
+.header-main ul img, .facility-footer-main ul img {
+  width: auto;
+  height: 50px;
+}
+
+.header-main ul h1, .facility-footer-main ul h1 {
+  padding: 0px 10px;
+}
+
+.header-main ul h1 span, .facility-footer-main ul h1 span {
+  font-size: 2rem;
+}
+
+.header-main ul a, .facility-footer-main ul a {
+  padding-top: 10px;
+  height: 40px;
+  flex-grow: 1;
+  text-align: center;
+  color: #676767;
+}
+
+.header-main ul a + a, .facility-footer-main ul a + a {
+  border-left: 1px solid #000;
+}
+
+.topline {
+  width: 100%;
+  color: #23ABA1;
+  background-color: #23ABA1;
+}
+
+.main-wrapper {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  color: #676767;
+}
+
+.main-wrapper img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.main-wrapper h1, .main-wrapper h2 {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.main-wrapper h1 {
+  font-size: 4rem;
+  top: 40%;
+}
+
+.main-wrapper h2 {
+  margin-top: 30px;
+  font-size: 2.4rem;
+  top: 55%;
+  font-weight: normal;
+}
+
+.main-wrapper .bdTtl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-wrapper .bdTtl:before,
+.main-wrapper .bdTtl:after {
+  border-top: 2px solid;
+  content: "";
+  width: 9rem;
+}
+
+.strangth-wrapper {
+  width: 100%;
+  height: 510px;
+  background-color: #F8F5EC;
+}
+
+.strangth {
+  width: 778px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.strangth h1 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.strangth h3 {
+  font-weight: normal;
+  font-size: 1.7rem;
+  padding-top: 50px;
+}
+
+.Button-top {
+  width: 750px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.Button-top li {
+  margin: 50px 15px;
+  width: 46%;
+  text-align: center;
+  background: #E29400;
+  color: #fff;
+  font-size: 14px;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.facility {
+  background-image: url(http://yanagi-ss.jp/files/libs/592/201808231642345466.jpg?1535010155);
+  background-size: cover;
+  height: 493px;
+}
+
+.facility h1 {
+  border-left: 6px solid #fff;
+  padding-left: 20px;
+  color: #fff;
+  width: 387px;
+  margin-left: 290px;
+  font-size: 4rem;
+  padding-top: 20px;
+}
+
+.facility h1 span {
+  font-size: 1.9rem;
+}
+
+.facility img {
+  width: 640px;
+  height: 460px;
+  margin-left: 730px;
+  margin-top: -110px;
+}
+
+.recruitment {
+  background-image: url(http://yanagi-ss.jp/files/libs/431/201808011348319769.jpg?1533098914);
+  background-size: cover;
+  height: 595px;
+  text-align: center;
+}
+
+.recruitment h1 {
+  color: #CCCCCC;
+  font-size: 4rem;
+  padding: 30px;
+}
+
+.recruitment h2 {
+  color: #F18610;
+  font-size: 3.5rem;
+  padding-bottom: 20px;
+}
+
+.recruitment p {
+  margin: 0 auto;
+  width: 642px;
+  font-size: 1.65rem;
+}
+
+.Button-top-recruitment {
+  width: 750px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.Button-top-recruitment li {
+  margin: 0px 15px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  width: 46%;
+  text-align: center;
+  background: #fff;
+  color: #619E2D;
+  font-size: 1.8rem;
+  line-height: 75px;
+}
+
+.Button-top-recruitment span {
+  font-size: 1.2rem;
+}
+
+.Button-top-recruitment-entry, .contact p {
+  background: pink;
+  height: 75px;
+  line-height: 75px;
+}
+
+.Button-top-recruitment-entry p, .contact p p {
+  width: 100%;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.Button-top-recruitment-entry span, .contact p span {
+  font-size: 1.2rem;
+}
+
+.topics-wrapper {
+  width: 100%;
+  height: 372px;
+  background-color: #DDDDDD;
+}
+
+.topics {
+  width: 1008px;
+  height: 285px;
+  display: flex;
+  margin: 0px auto;
+  padding-top: 30px;
+}
+
+.topics-title {
+  border-right: 3px solid black;
+  margin: 0px 40px;
+  padding-right: 40px;
+}
+
+.topics-content {
+  border-bottom: 1px solid;
+}
+
+.topics-content h5, .topics-content a {
+  padding: 15px 20px 15px 20px;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.topics-content h5 {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.contact-wrapper, .faciliy-footer-contact {
+  width: 100%;
+  height: 392px;
+  background-image: url(http://yanagi-ss.jp/files/libs/354/201807131852474867.jpg?1531899936);
+  background-size: cover;
+}
+
+.contact {
+  width: 663px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.contact h1 {
+  font-size: 4rem;
+}
+
+.contact h4 {
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+.contact h3 {
+  border-top: 1px solid #fff;
+  padding: 20px 0;
+  font-weight: normal;
+}
+
+.contact p {
+  background-color: #fff;
+  color: black;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+}
+
+footer h5 {
+  font-weight: normal;
+}
+
+.facility-top, .company-top {
+  padding: 0;
+  margin: 0;
+  height: 183px;
+  background-color: #E5D7D4;
+  position: relative;
+}
+
+.facility-top h1, .company-top h1 {
+  position: absolute;
+  border-left: 3px solid #333333;
+  padding-left: 20px;
+  font-size: 4rem;
+  left: 480px;
+  top: 50px;
+  color: #333333;
+}
+
+.facility-top p, .company-top p {
+  position: absolute;
+  top: 150px;
+  left: 480px;
+  font-size: 1.2rem;
+}
+
+.facility-main {
+  width: 700px;
+  font-size: 1.95rem;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.facility-contents-img {
+  width: 710px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.facility-contents-img img {
+  width: 48%;
+  height: 258px;
+  margin: 0 10px;
+}
+
+.facility-contents-text {
+  width: 710px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.facility-contents-text p {
+  width: 48%;
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.company-product, .faciliy-major {
+  width: 710px;
+  height: 170px;
+  margin: 10px auto;
+}
+
+.company-product h3, .faciliy-major h3 {
+  background-color: #23ABA1;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  padding: 0 10px;
+  font-weight: normal;
+}
+
+.company-product span, .faciliy-major span {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.faciliy-major {
+  height: 60px;
+}
+
+.facility-contact, .company-main, .company-client, .company-access {
+  width: 710px;
+  height: 245px;
+  margin: 0 auto;
+}
+
+.facility-contact h3, .company-main h3, .company-client h3, .company-access h3 {
+  background-color: #23ABA1;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  padding: 0 10px;
+  font-weight: normal;
+}
+
+.facility-contact span, .company-main span, .company-client span, .company-access span {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.facility-contact-contents {
+  width: 710px;
+  height: 172px;
+  margin: 0 auto;
+  border: 1px solid #E5D7D4;
+}
+
+.facility-contact-contents h2 {
+  font-size: 1.6rem;
+  padding: 10px 0;
+}
+
+.facility-contact-contents h4 {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.facility-footer-main {
+  background-color: #23ABA1;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.facility-footer-main ul {
+  padding: 20px 0;
+  width: 520px;
+  margin: 0 auto;
+}
+
+.facility-footer-main ul a {
+  font-size: 1.2rem;
+  padding-top: 3px;
+  height: 20px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.facility-footer-main ul a + a {
+  border-left: 1px solid #000;
+}
+
+.faciliy-footer-contact {
+  text-align: left;
+  height: 144px;
+}
+
+.faciliy-footer-contact img {
+  width: auto;
+  height: 50px;
+}
+
+.faciliy-footer-contact h2 {
+  display: inline-block;
+  text-align: left;
+  font-weight: normal;
+}
+
+.faciliy-footer-contact h5 {
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+.company-top {
+  text-align: center;
+}
+
+.company-main, .company-client, .company-access {
+  height: 70px;
+  padding-top: 10px;
+}
+
+.company-client ul {
+  padding-top: 10px;
+  height: 200px;
+  list-style: disc;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.company-access {
+  margin-top: 100px;
+}
+
+.company-access-content {
+  width: 600px;
+  margin: 0 auto;
+  font-weight: normal;
+}

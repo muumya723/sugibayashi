@@ -1,0 +1,489 @@
+@import "_common.scss";
+
+// .clearfix::after {
+//    content: "";
+//    display: block;
+//    clear: both;
+// }
+.headertop {
+  color: $color-black;
+  width: 70%;
+  margin: 10px auto;
+  display: flex;
+  // background-color: red;
+  h6 {
+    width: 66%;
+  }
+  h2 {
+    width: 34%;
+    // background-color: orange;
+  span {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.header-main {
+  color: $color-black;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
+   // background-color: pink;
+  ul {
+    display: flex;
+    img {
+      width: auto;
+      height: 50px;
+    }
+    h1 {
+      padding: 0px 10px;
+      span {
+        font-size: 2rem;
+      }
+    }
+    a {
+      padding-top: 10px;
+      height: 40px;
+      flex-grow: 1;
+      text-align: center;
+      color: $color-black;
+    }
+    a + a {
+      border-left: 1px solid #000;
+    }
+  }
+}
+.topline {
+  // display: block;
+  width: 100%;
+  // font-size: 3.5rem;
+  color: #23ABA1;
+  background-color: #23ABA1;
+}
+
+.main-wrapper {
+  // margin-top: 80px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  color: $color-black;
+ img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+  }
+  h1,h2 {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  }
+  h1 {
+  font-size: 4rem;
+  top: 40%;
+  }
+  h2 {
+  margin-top: 30px;
+  font-size: 2.4rem;
+  top: 55%;
+  font-weight: normal;
+  }
+  .bdTtl {
+  display: flex;
+  align-items: center;
+  justify-content: center;  //全幅で線を引く場合は不要。
+  }
+  .bdTtl:before,
+  .bdTtl:after {
+  border-top: 2px solid;
+  content: "";
+  width:9rem; //全幅で線を引く場合は不要。
+  }
+}
+.strangth-wrapper {
+  width: 100%;
+  height: 510px;
+  background-color: #F8F5EC;
+}
+.strangth {
+  width: 778px;
+  text-align: center;
+  margin: 0 auto;
+  h1 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  h3 {
+    font-weight: normal;
+    font-size: 1.7rem;
+    padding-top: 50px;
+  }
+}
+
+.Button-top {
+  width: 750px;
+  display: flex;
+	margin: 0 auto;
+	padding: 0;
+  li {
+    margin: 50px 15px;
+	  width: 46%;
+  	text-align:center;
+  	background: #E29400;
+  	color: #fff;
+  	font-size: 14px;
+  	line-height: 50px;
+  	text-decoration:none;
+  }
+}
+// 設備紹介
+.facility {
+  background-image:url(http://yanagi-ss.jp/files/libs/592/201808231642345466.jpg?1535010155);
+  background-size: cover;
+  height: 493px;
+  h1 {
+    border-left: 6px solid #fff;
+    padding-left: 20px;
+    color: #fff;
+    width: 387px;
+    margin-left: 290px;
+    font-size: 4rem;
+    padding-top: 20px;
+    span {
+      font-size: 1.9rem;
+    }
+  }
+  img {
+    width: 640px;
+    height: 460px;
+    margin-left: 730px;
+    margin-top: -110px;
+  }
+}
+
+.recruitment {
+  background-image:url(http://yanagi-ss.jp/files/libs/431/201808011348319769.jpg?1533098914);
+  background-size: cover;
+  height: 595px;
+  text-align: center;
+ h1 {
+   color: #CCCCCC;
+   font-size: 4rem;
+   padding: 30px;
+ }
+ h2 {
+   color: #F18610;
+   font-size: 3.5rem;
+   padding-bottom: 20px;
+ }
+ p {
+   margin: 0 auto;
+   width: 642px;
+   font-size: 1.65rem;
+ }
+}
+.Button-top-recruitment {
+ width: 750px;
+ display: flex;
+ margin: 0 auto;
+   li {
+    margin: 0px 15px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 46%;
+   	text-align: center;
+   	background: #fff;
+   	color: #619E2D;
+   	font-size: 1.8rem;
+   	line-height: 75px;
+    }
+  span {
+    font-size: 1.2rem;
+  }
+ }
+.Button-top-recruitment-entry {
+    background: pink;
+    height: 75px;
+   	line-height: 75px;
+  p {
+    width: 100%;
+   	text-align: center;
+   	font-size: 2.2rem;
+  }
+  span {
+    font-size: 1.2rem;
+  }
+}
+
+// TOPIXS
+.topics-wrapper {
+  width: 100%;
+  height: 372px;
+  background-color: #DDDDDD;
+}
+.topics {
+  width: 1008px;
+  height: 285px;
+  display: flex;
+  margin: 0px auto;
+  padding-top: 30px;
+}
+.topics-title {
+  border-right: 3px solid black;
+  margin:0px 40px;
+  padding-right: 40px;
+}
+.topics-content {
+  border-bottom: 1px solid;
+  h5,a {
+    padding:15px 20px 15px 20px;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+  h5 {
+    display: inline-block;
+    font-size: 1.4rem;
+  }
+}
+
+.contact-wrapper {
+  width: 100%;
+  height: 392px;
+  background-image:url(http://yanagi-ss.jp/files/libs/354/201807131852474867.jpg?1531899936);
+  background-size: cover;
+}
+.contact {
+  width: 663px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: #fff;
+  h1 {
+    font-size: 4rem;
+  }
+  h4 {
+    font-weight: normal;
+    padding-bottom: 20px;
+  }
+  h3 {
+    border-top:  1px solid #fff;
+    padding: 20px 0;
+    font-weight: normal;
+  }
+  p {
+    @extend .Button-top-recruitment-entry;
+    background-color: #fff;
+    color: black;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 20px;
+  }
+
+}
+footer {
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  h5 {
+    font-weight: normal;
+  }
+}
+
+// 保有設備
+.facility-top {
+  // background-image:url(http://yanagi-ss.jp/files/libs/602/back.jpg?1535016700);
+  // background-size: cover;
+  padding: 0;
+  margin: 0;
+  height: 183px;
+  background-color: #E5D7D4;
+  position: relative;
+  h1 {
+    position: absolute;
+    border-left: 3px solid #333333;
+    padding-left: 20px;
+    font-size: 4rem;
+    left: 480px;
+    top: 50px;
+    color: #333333;
+  }
+  p {
+    position: absolute;
+    top: 150px;
+    left: 480px;
+    font-size: 1.2rem;
+    // direction:
+  }
+}
+.facility-main {
+  width: 700px;
+  font-size: 1.95rem;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.facility-contents-img {
+  width: 710px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 10px;
+  img {
+    width: 48%;
+    height: 258px;
+    margin: 0 10px;
+  }
+}
+.facility-contents-text {
+  width: 710px;
+  display: flex;
+  margin: 0 auto;
+  p {
+    width: 48%;
+    margin: 20px 10px;
+    text-align: center;
+    // background-color: pink;
+  }
+}
+.company-product {
+  width: 710px;
+  height: 170px;
+  margin: 10px auto;
+  h3 {
+    background-color: #23ABA1;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    padding: 0 10px;
+    font-weight: normal;
+  }
+  span {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+}
+.faciliy-major {
+  @extend .company-product;
+  height: 60px;
+}
+.facility-contact {  //お問い合わせはこちらから
+  width: 710px;
+  height: 245px;
+  margin: 0 auto;
+  h3 {
+    background-color: #23ABA1;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    padding: 0 10px;
+    font-weight: normal;
+  }
+  span {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+}
+.facility-contact-contents {
+  width: 710px;
+  height: 172px;
+  margin: 0 auto;
+  border: 1px solid #E5D7D4;
+  h2 {
+    font-size: 1.6rem;
+    padding: 10px 0;
+  }
+  h4 {
+    display: inline-block;
+    padding: 10px 0;
+  }
+}
+
+.facility-footer-main {
+  @extend .header-main;
+  background-color: #23ABA1;
+  font-size: 1rem;
+  width: 100%;
+  // height: 60px;
+  ul {
+    padding: 20px 0;
+    width: 520px;
+    margin: 0 auto;
+    // height: 20px;
+    a {
+      font-size: 1.2rem;
+      padding-top: 3px;
+      height: 20px;
+      flex-grow: 1;
+      text-align: center;
+    }
+    a + a {
+      border-left: 1px solid #000;
+    }
+  }
+}
+
+.faciliy-footer-contact {
+  @extend .contact-wrapper;
+  text-align: left;
+  height: 144px;
+  img {
+    width: auto;
+    height: 50px;
+  }
+  h2 {
+    display: inline-block;
+    text-align: left;
+    font-weight: normal;
+  }
+  h5 {
+    padding-top: 10px;
+    font-weight: normal;
+    // display: inline-block;
+  }
+}
+
+
+
+// 会社案内
+.company-top {
+  @extend .facility-top;
+  text-align: center;
+}
+
+.company-main {
+  @extend .facility-contact;
+  height: 70px;
+  padding-top: 10px;
+}
+
+.company-client {
+  @extend .company-main;
+  ul {
+    padding-top: 10px;
+    height: 200px;
+    list-style: disc;
+  }
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.company-access {
+  @extend .company-main;
+  margin-top: 100px;
+}
+
+.company-access-content {
+  width: 600px;
+  margin: 0 auto;
+  font-weight: normal;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/stylesheet.css">
+    <meta charset="utf-8">
+
+    <!-- Font Awesomeの読み込み -->
+    <script src="https://kit.fontawesome.com/3e161cfde5.js" crossorigin="anonymous"></script>
+    <title>杉林製作所</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+  <script>
+  jQuery(document).ready(function() {
+  var offset = 100;
+  var duration = 500;
+  jQuery(window).scroll(function() {
+  if (jQuery(this).scrollTop() > offset) {
+  jQuery('.pagetop').fadeIn(duration);
+  } else {
+  jQuery('.pagetop').fadeOut(duration);
+  }
+  });
+
+  jQuery('.pagetop').click(function(event) {
+  event.preventDefault();
+  jQuery('html, body').animate({scrollTop: 0}, duration);
+  return false;
+  })
+  });
+  </script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="headertop">
+        <h6>株式会社　杉林製作所のホームページ</h6>
+        <h2>><span>お問い合わせはこちら</span>　TEL.076-231-6004</h2>
+      </div>
+      <div class="header-main">
+        <ul>
+          <img src="../img/logo.jpg" alt="logo">
+          <h1><span>株式会社</span> 杉林製作所</h1>
+          <a href="#">トップページ</a>
+          <a href="company.html">会社案内</a>
+          <a href="business.html">事業内容</a>
+          <a href="facility.html">保有設備</a>
+          <a href="recruit.html">採用情報</a>
+          <a href="contact.html">お問い合わせ</a>
+        </ul>
+      </div>
+    </header>
+
+    <h1 class="topline">ああああああ</h1>
+
+    <div class="company-top">
+      <h1>会社案内</h1>
+      <p><i class="fas fa-home"></i>トップページ ＞ 会社案内</p>
+    </div>
+
+    <div class="company-main">
+      <h3><span>|</span>会社概要</h3>
+    </div>
+
+    <div class="company-contents">
+      <table border="1" height="50px" width="710" >
+        <!-- <tbody> -->
+          <tr>
+            <th>加工分野</th>
+            <td>設計・部品調達・機械組立</td>
+          </tr>
+          <tr>
+            <th>会社名</th>
+            <td>株式会社　杉林製作所</td>
+          </tr>
+          <tr>
+            <th>代表者名</th>
+            <td>杉林　伸子</td>
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td>〒920-0047　石川県金沢市大豆田本町甲290番地1</td>
+          </tr>
+          <tr>
+            <th>Tel</th>
+            <td>076-231-6004</td>
+          </tr>
+          <tr>
+            <th>FAX</th>
+            <td>076-265-5210</td>
+          </tr>
+          <tr>
+            <th>メールアドレス</th>
+            <td>miyakosi-subibayasi@tiaraocn.ne.jp</td>
+          </tr>
+          <tr>
+            <th>営業担当者</th>
+            <td>杉林　伸子</td>
+          </tr>
+          <tr>
+            <th>品質担当者</th>
+            <td>宮腰　郁雄（常務取締役）</td>
+          </tr>
+          <tr>
+            <th>資本金</th>
+            <td>15,000,000円</td>
+          </tr>
+          <tr>
+            <th>従業員数</th>
+            <td>15人</td>
+          </tr>
+        <!-- </tbody> -->
+      </table>
+    </div>
+
+    <div class="company-client">
+      <h3><span>|</span>主要取引先</h3>
+      <ul>
+        <li>渋谷工業株式会社</li>
+        <li>シブヤマシナリー株式会社</li>
+        <li>株式会社白山機工</li>
+      </ul>
+    </div>
+
+    <div class="company-access">
+      <h3><span>|</span>アクセス</h3>
+    </div>
+    <div class="company-access-content">
+      <h5>住所：〒920-0047　石川県金沢市大豆田本町甲290番地1</h5>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.2306402571735!2d136.63515861528333!3d36.57265947999603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff833609aadc033%3A0x4beb0ede06e7e8a4!2z44CSOTIwLTAwNDcg55-z5bed55yM6YeR5rKi5biC5aSn6LGG55Sw5pys55S655Sy77yS77yZ77yQ4oiS77yRIOadieael-ijveS9nOaJgA!5e0!3m2!1sja!2sjp!4v1588728552547!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </body>
+</html>

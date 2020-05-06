@@ -1,0 +1,54 @@
+/* CSSのリセット */
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+html {
+  /* ルートのフォントサイズを10pxに設定しておく */
+	font-size: 62.5%;
+}
+body {
+  font-family:游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	/* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
+	font-size: 1.6em;
+}
+$color-black: #676767;
+
+//ーーーーーここからCSSを記載ーーーーーー
+// li {
+//   list-style: none;
+// }
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+/* 上に戻るボタン */
+.pagetop {
+	color: #fff;
+	background-color: #23ABA1;
+	text-decoration: none;
+	display: none;
+	position: fixed;
+	bottom: 5rem;
+	right: 1rem;
+	font-size: 3rem;
+  font-weight: bold;
+	width: 6rem;
+	height: 6rem;
+	line-height: 6rem;
+	border-radius: 6rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.pagetop:hover {
+	color: #fff !important;
+  opacity: 0.6;
+	text-decoration: none;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/stylesheet.css">
+    <meta charset="utf-8">
+
+    <!-- Font Awesomeの読み込み -->
+    <script src="https://kit.fontawesome.com/3e161cfde5.js" crossorigin="anonymous"></script>
+    <title>杉林製作所</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+  <script>
+  jQuery(document).ready(function() {
+  var offset = 100;
+  var duration = 500;
+  jQuery(window).scroll(function() {
+  if (jQuery(this).scrollTop() > offset) {
+  jQuery('.pagetop').fadeIn(duration);
+  } else {
+  jQuery('.pagetop').fadeOut(duration);
+  }
+  });
+
+  jQuery('.pagetop').click(function(event) {
+  event.preventDefault();
+  jQuery('html, body').animate({scrollTop: 0}, duration);
+  return false;
+  })
+  });
+  </script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="headertop">
+        <h6>株式会社　杉林製作所のホームページ</h6>
+        <h2>><span>お問い合わせはこちら</span>　TEL.076-231-6004</h2>
+      </div>
+      <div class="header-main">
+        <ul>
+          <img src="../img/logo.jpg" alt="logo">
+          <h1><span>株式会社</span> 杉林製作所</h1>
+          <a href="#">トップページ</a>
+          <a href="company.html">会社案内</a>
+          <a href="business.html">事業内容</a>
+          <a href="facility.html">保有設備</a>
+          <a href="recruit.html">採用情報</a>
+          <a href="contact.html">お問い合わせ</a>
+        </ul>
+      </div>
+    </header>
+
+    <h1 class="topline">ああああああ</h1>
+
+    <div class="facility-top">
+      <h1>保有設備</h1>
+      <p><i class="fas fa-home"></i>トップページ ＞ 保有設備</p>
+    </div>
+    <div class="facility-main">
+      <p>多岐にわたる装置において、お客様から求められる部品は多様化しています。
+当社では、お客様のご要望に合わせた形状・サイズ・精度を実現させるために、
+多様な設備を揃えています。</p>
+    </div>
+
+    <div class="company-product">
+      <h3><span>|</span>主要製品名</h3>
+      <ul>
+        <li>SZ型分岐装置</li>
+        <li>HLB型キャップ滅菌装置</li>
+        <li>BZ型キャップ搬送コンベヤ</li>
+        <li>Z7850型コンベヤ</li>
+      </ul>
+    </div>
+
+    <div class="facility-contents-img">
+      <img src="../img/5415.jpg" alt="">
+      <img src="../img/5414.jpg" alt="">
+    </div>
+    <div class="facility-contents-text">
+      <p>HLB型　ヘッダーローダー</p>
+      <p>SZ型　分岐装置</p>
+    </div>
+
+
+    <div class="faciliy-major">
+      <h3><span>|</span>主要機械</h3>
+    </div>
+
+
+    <div class="company-contents">
+      <table border="1" height="50px" width="710" >
+        <!-- <tbody> -->
+          <tr>
+            <th>主要機械</th>
+            <th>能力</th>
+            <th>台数</th>
+          </tr>
+          <tr>
+            <td>シヤー</td>
+            <td>2,400×66.0</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>コーナーシヤー</td>
+            <td></td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>ブレーキプレス</td>
+            <td>2,400×66.0</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>3本ローラー</td>
+            <td>920</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>アーク溶接機</td>
+            <td>180A,200A</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>半自動溶接機</td>
+            <td>350A</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>アルゴン溶接機</td>
+            <td>200A</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>スポット溶接機</td>
+            <td>t4.5</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>パイプねじ切盤</td>
+            <td></td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>交流電気メタル切断機</td>
+            <td>γ360✖︎200</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>普通錠盤</td>
+            <td>340✖︎215</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>フライス盤</td>
+            <td>300✖︎600</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>ラジアルボール盤</td>
+            <td>KID420</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>直立ボール盤</td>
+            <td>KDT410</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>タッピング</td>
+            <td></td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>携帯式磁気ボール盤</td>
+            <td>M-250</td>
+            <td>1</td>
+          </tr>
+                  <!-- </tbody> -->
+      </table>
+    </div>
+
+
+
+
+    <div class="facility-contact">
+      <h3><span>|</span>お問い合わせはこちらから</h3>
+      <!-- <img src="http://yanagi-ss.jp/files/libs/590/t/201808101513047867.JPG?1533881586" alt="お問い合わせ">
+      <div class="facility-contact-tel"> -->
+      <div class="facility-contact-contents">
+        <h2>まずはお気軽にお問い合わせください</h2>
+        <h4>【TEL】076-231-6004</h4>
+        <h4>【FAX】076−265−5210</h4>
+        <p>※受付時間：8時〜17時</p>
+        <p>（土・日・祝日を除く）</p>
+      </div>
+      <!-- </div> -->
+    </div>
+
+      <div class="facility-footer-main">
+        <ul>
+          <a>トップページ</a>
+          <a>会社案内</a>
+          <a>事業内容</a>
+          <a href="page/facility.html">保有設備</a>
+          <a>採用情報</a>
+          <a>お問い合わせ</a>
+          <a>お取引の流れ</a>
+        </ul>
+      </div>
+
+      <div class="faciliy-footer-contact">
+        <div class="contact">
+          <img src="../img/logo.jpg" alt="logo">
+          <h2><span>株式会社</span> 杉林製作所</h2>
+          <h5>〒920-0047　石川県金沢市大豆田本町甲290番地1  TEL. 076-231-6004  FAX: 076−265−5210</h5>
+        </div>
+      </div>
+  </body>
+</html>
