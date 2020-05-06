@@ -42,13 +42,13 @@ header {
       height: 50px;
     }
     h1 {
-      padding: 0px 10px;
+      // padding: 0px 10px;
       span {
         font-size: 2rem;
       }
     }
     a {
-      padding-top: 10px;
+      // padding-top: 5px;
       height: 40px;
       flex-grow: 1;
       text-align: center;
@@ -58,6 +58,10 @@ header {
       border-left: 1px solid #000;
     }
   }
+}
+
+.aaa {
+  padding-top: 10px;
 }
 .topline {
   // display: block;
@@ -133,7 +137,7 @@ header {
   display: flex;
 	margin: 0 auto;
 	padding: 0;
-  li {
+  a {
     margin: 50px 15px;
 	  width: 46%;
   	text-align:center;
@@ -143,6 +147,9 @@ header {
   	line-height: 50px;
   	text-decoration:none;
   }
+  // &:hover{
+  //   opacity: 0.6;
+  // }
 }
 // 設備紹介
 .facility {
@@ -325,6 +332,10 @@ footer {
     font-size: 1.2rem;
     // direction:
   }
+  a {
+    color: #333333;
+    border-bottom: 1px solid black;
+  }
 }
 .facility-main {
   width: 700px;
@@ -491,4 +502,14 @@ table {
   width: 600px;
   margin: 0 auto;
   font-weight: normal;
+}
+
+
+
+// 採用情報
+.recruit-top {
+  @extend .facility-top;
+}
+.business-top {
+  @extend .facility-top;
 }
